@@ -1,4 +1,3 @@
-
 # R, Node, and React Demo application
 
 This application is an example developing an React application and processing data in the R environment. The client is built using [React](https://reactjs.org). The flow of data is handled by [express.js](https://expressjs.com) and processed in R using [r-script](https://github.com/fridgerator/r-script) before being sent to the client.
@@ -13,20 +12,30 @@ Make sure the following tools are installed.
 
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/en/)
-- [npm](https://www.npmjs.com/get-npm)
 
 ## Get Started
 
-To get started, clone this repository. To run the application, type the following command in the root directory.
+To get started, clone this repository to your local machine. Then, install the required packages using `yarn` (the examples that I used to get this application running used yarn). Install the packages in the root directory and then in src.
+
+```bash
+cd r-react-demo/
+yarn install
+
+cd src
+yarn install
+```
+
+Once everything is installed, you can start the application. In the root directory, run the following command.
 
 ```bash
 yarn dev
 ```
 
-Doing so will also install the require node packages. You may want to install everything first. If that is the case, run `npm install` in both the root directory and then in client directory.
+This will start the development server at `localhost:3000`.
 
 ## Futher Reading
 
-If you want to start fresh with a new application, I used the following tutorial to set up the application: [How to create a React frontend and a Node/Express backend and connect them](https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/)
+This application was built by piecing together a few blog posts. If you want to start from scratch, see the following posts. 
 
-See the `r-script` [documentation](https://www.npmjs.com/package/@fridgerator/r-script) to learn how to integrate R. 
+- [How to create a React frontend and a Node/Express backend and connect them](https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/)
+- [r-rscript](https://www.npmjs.com/package/@fridgerator/r-script)
