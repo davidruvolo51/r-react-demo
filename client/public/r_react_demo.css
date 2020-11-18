@@ -41,7 +41,6 @@ p {
   top: 0;
 }
 
-
 .header p {
   text-align: center;
   color: #f0f0f0;
@@ -95,10 +94,12 @@ input[type=number] {
   text-align: center;
 }
 
-button[type=submit]{
+button[type=submit] {
   display: block;
   float: right;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   background-color: #252525;
   color: #f0f0f0;
@@ -123,8 +124,7 @@ output {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-@media screen and (min-width: 912px){
-
+@media screen and (min-width: 912px) {
   .section {
     max-width: 912px;
   }
