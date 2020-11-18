@@ -4,10 +4,9 @@
 #' CREATED: 2019-11-01
 #' MODIFIED: 2019-12-05
 #' PURPOSE: summarize data
-#' PACKAGES: plumber
-#' STATUS: in.progress
+#' PACKAGES: r-script; https://github.com/fridgerator/r-script
+#' STATUS: working
 #' COMMENTS: NA
 #'//////////////////////////////////////////////////////////////////////////////
-#' GLOBAL OPTIONS:
-options(stringsAsFactors = FALSE)
+
 input[[1]] ^ input[[2]]
