@@ -1,41 +1,44 @@
-# R, Node, and React Demo application
+# R ❤️ React Demo application
 
-This application is an example developing an React application and processing data in the R environment. The client is built using [React](https://reactjs.org). The flow of data is handled by [express.js](https://expressjs.com) and processed in R using [r-script](https://github.com/fridgerator/r-script) before being sent to the client.
+The `r-react-demo` app demonstrates how to create a React application that uses R to process data server side. The app itself is pretty simple: square a number by a given exponent.
 
-The application is simple in functionality, but it demonstrates the flow of data. The purpose of the app is square a number from 1 to 100 by an exponent (between 2 and 10). These values are passed to the server (via an express api `/data`) and evaluate by: an R script (`R/index.R`) and using javascript function (for illustration purposes only). The result is sent to the client into the component's state and rendered below the form.
+The app was built using the following tools.
 
-This setup may be useful for integrating familiar data handling practices in the R environment or for conducting analysis using R packages. 
+- Frontend
+  - [React](https://reactjs.org)
+  - [Webpack](https://webpack.js.org)
+- Backend
+  - [Express](https://expressjs.com)
+  - [r-script](https://github.com/fridgerator/r-script)
 
 ## Installation
 
-Make sure the following tools are installed.
+Make sure [Node.js](https://nodejs.org/en/) is installed on your machine. (You may also use [Yarn](https://yarnpkg.com/en/)).
 
-- [Node.js](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/en/)
+Clone this repository to your local machine.
 
-## Get Started
-
-To get started, clone this repository to your local machine. Then, install the required packages using `yarn` (the examples that I used to get this application running used yarn). Install the packages in the root directory and then in src.
-
-```bash
-cd r-react-demo/
-yarn install
-
-cd src
-yarn install
+```shell
+git clone https://github.com/davidruvolo51/r-react-demo
 ```
 
-Once everything is installed, you can start the application. In the root directory, run the following command.
+Then, install the required dependencies. (You will need to do this in the root dir and in the `client` dir.)
 
-```bash
+```shell
+cd r-react-demo
+npm install
+
+cd client
+npm install
+```
+
+Once everything is installed, navigate back to the root directory and run the following command.
+
+```shell
 yarn dev
 ```
 
-This will start the development server at `localhost:3000`.
+This will start the server at `localhost:5000` and the application at `localhost:8000`.
 
 ## Futher Reading
 
-This application was built by piecing together a few blog posts. If you want to start from scratch, see the following posts. 
-
-- [How to create a React frontend and a Node/Express backend and connect them](https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/)
-- [r-rscript](https://www.npmjs.com/package/@fridgerator/r-script)
+This application was built by piecing together a few blog posts. If you want to start from scratch, checkout out the [How to create a React frontend and a Node/Express backend and connect them](https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/) post.
