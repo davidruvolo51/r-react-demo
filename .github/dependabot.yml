@@ -13,3 +13,13 @@ updates:
     labels:
       - "npm"
       - "dependencies"
+  - package-ecosystem: "npm"
+    directory: "/client"
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+    commit-message:
+      prefix: "npm"
+    labels:
+      - "npm"
+      - "dependencies"
