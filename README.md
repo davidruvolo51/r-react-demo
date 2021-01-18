@@ -1,8 +1,8 @@
 # R ❤️ React Demo application
 
-The `r-react-demo` app demonstrates how to create a React application that uses R to process data server side. The app itself is pretty simple: square a number by a given exponent.
+![r react demo application](r-react-demo-screenshot.png)
 
-The app was built using the following tools.
+The `r-react-demo` app demonstrates how to create a React application that uses R to process data server side. The app was built using the following tools.
 
 - Frontend
   - [React](https://reactjs.org)
@@ -11,34 +11,48 @@ The app was built using the following tools.
   - [Express](https://expressjs.com)
   - [r-script](https://github.com/fridgerator/r-script)
 
-## Installation
+## Getting Started
 
-Make sure [Node.js](https://nodejs.org/en/) is installed on your machine. (You may also use [Yarn](https://yarnpkg.com/en/)).
+### 1. Install Node and NPM
 
-Clone this repository to your local machine.
+Make sure [Node and NPM](https://nodejs.org/en/) are installed on your machine. You may also use [Yarn](https://yarnpkg.com/en/). To test the installation or to see if these tools are already installed on your machine, run the following commands in the terminal.
+
+```shell
+node -v
+npm -v
+```
+
+### 2. Clone the `r-react-demo` repository
 
 ```shell
 git clone https://github.com/davidruvolo51/r-react-demo
 ```
 
-Then, install the required dependencies. (You will need to do this in the root dir and in the `client` dir.)
+### 3. Install dependencies
+
+Next, install the npm packages that are required to run the app locally. You will need to install the dependencies in the root directory and in the `client/` directory. I have included the script `install`, which will handle this for you.
 
 ```shell
-cd r-react-demo
+npm run install
+```
+
+Or you can install everything manually.
+
+```shell
 npm install
 
 cd client
 npm install
 ```
 
-Once everything is installed, navigate back to the root directory and run the following command.
+### 4. Start the development servers
+
+When everything is install, navigate back to the main directory and start the development server. This will start the client at port `localhost:8000` and the API at `localhost:5000`.
 
 ```shell
-yarn dev
+npm run dev
 ```
-
-This will start the server at `localhost:5000` and the application at `localhost:8000`.
 
 ## Futher Reading
 
-This application was built by piecing together a few blog posts. If you want to start from scratch, checkout out the [How to create a React frontend and a Node/Express backend and connect them](https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/) post.
+This application was built by piecing together a few blog posts. If you would like to start from scratch, checkout out the [How to create a React frontend and a Node/Express backend and connect them](https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/) post.
