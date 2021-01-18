@@ -2,7 +2,7 @@
 // FILE: App.js
 // AUTHOR: David Ruvolo
 // CREATED: 2019-11-01
-// MODIFIED: 2020-11-18
+// MODIFIED: 2021-01-18
 // PURPOSE: build ui
 // DEPENDENCIES: react
 // STATUS: working
@@ -18,7 +18,7 @@ function App() {
 	const [squaredR, setSquaredR] = useState(0);
 
 	// on form submit function
-	// send input values to /api/data/ and wait for response
+	// send input values to /data/ and wait for response
 	const handleSubmit = async e => {
 		e.preventDefault();
 
