@@ -2,8 +2,8 @@
   "name": "api",
   "version": "1.0.0",
   "scripts": {
-    "install": "npm install && cd client && npm install",
-    "upgrade": "npm upgrade && cd client && npm upgrade",
+    "setup": "pnpm install && cd client && pnpm install",
+    "upgrade": "pnpm upgrade --latest && cd client && pnpm upgrade --latest",
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
