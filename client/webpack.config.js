@@ -19,14 +19,15 @@ console.log(path.__dirname)
 
 // configuration
 module.exports = {
+    mode: "development",
     entry: "./src/index.js",
     output: {
+        publicPath: "",
         path: path.resolve(__dirname, "public/"),
-        filename: "r_react_demo.js",
+        filename: "app.[contenthash].js",
     },
     devServer: {
         port: 8000,
-        publicPath: "/",
         hot: true,
         writeToDisk: true,
     },
@@ -37,7 +38,7 @@ module.exports = {
             filename: "index.html",
         }),
         new MiniCssExtractPlugin({
-            filename: "r_react_demo.css",
+            filename: "app.[contenthash].css",
         }),
         new CleanWebpackPlugin(),
     ],
