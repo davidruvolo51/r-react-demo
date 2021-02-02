@@ -1,8 +1,8 @@
 # R ❤️ React Demo application
 
-![r react demo application](r-react-demo-screenshot.png)
+![r react demo application preview](r-react-demo-screenshot.png)
 
-The `r-react-demo` app demonstrates how to create a React application that uses R to process data server side. The app was built using the following tools.
+The `r-react-demo` app demonstrates how to create a React application that uses R to process data server side. This is a fairly simple example, but it should provide a good starting point for your project. The app was built using the following tools.
 
 - Frontend
   - [React](https://reactjs.org)
@@ -30,13 +30,22 @@ git clone https://github.com/davidruvolo51/r-react-demo
 
 ### 3. Install dependencies
 
-Next, install the npm packages that are required to run the app locally. You will need to install the dependencies in the root directory and in the `client/` directory. I have included the script `install`, which will handle this for you.
+Next, install the npm packages that are required to run the app locally. I have decided to use [pnpm](https://github.com/pnpm/pnpm) to manage packages on my machine and across projects. To install `pnpm`, run the following command.
 
 ```shell
-npm run install
+npm install -g pnpm
 ```
 
-Or you can install everything manually.
+You will need to install the dependencies in the root directory and in the `client/` directory.
+
+```shell
+pnpm install
+
+cd client
+pnpm install
+```
+
+If you prefer to use `npm`, use the following.
 
 ```shell
 npm install
